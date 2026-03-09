@@ -1,0 +1,4 @@
+interface:
+  display_name: "WeChat Daily News"
+  short_description: "Write WeChat-ready daily news articles"
+  default_prompt: "Write today's 08:00 China time WeChat daily column in Chinese using the fixed title pattern, source dates, brief insights, and image suggestions."

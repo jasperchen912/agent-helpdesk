@@ -1,0 +1,25 @@
+profile_name: business-focus
+audience: business-first tech-and-markets readers
+coverage_primary:
+  - markets
+  - major-companies
+  - trade
+  - macro-policy
+  - ai-as-business-infrastructure
+coverage_secondary:
+  - regulation
+  - supply-chain
+  - geopolitics-when-market-relevant
+story_order:
+  - market-moving
+  - company-actions
+  - policy-and-trade
+  - technology-with-commercial-impact
+commentary_bias:
+  - explain-business-impact
+  - emphasize-costs-incentives-and-positioning
+  - avoid-general-human-interest-angles-unless-material
+title_style:
+  - direct
+  - businesslike
+  - non-clickbait

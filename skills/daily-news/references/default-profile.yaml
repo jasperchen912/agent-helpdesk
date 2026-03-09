@@ -1,0 +1,25 @@
+locale: zh-CN
+timezone: Asia/Shanghai
+daily_boundary: calendar-day
+audience: general tech-and-business readers
+tone:
+  - restrained
+  - clear
+  - editor-like
+coverage_primary:
+  - major-headlines
+  - ai
+  - technology
+  - business
+coverage_secondary:
+  - policy
+  - world
+  - internet-culture-when-high-impact
+commentary_level: brief-insight
+image_strategy: suggestion-only
+output_format: wechat-ready-markdown
+article_length: medium-form
+title_style:
+  - informative
+  - high-density
+  - non-clickbait

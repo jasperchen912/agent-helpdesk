@@ -1,0 +1,34 @@
+profile_name: morning-column
+locale: zh-CN
+timezone: Asia/Shanghai
+publish_time: "08:00"
+cadence: daily
+coverage_window: rolling-24h-until-publish-time
+carry_over_rule: only-when-materially-advanced
+audience: general tech-and-business readers
+tone:
+  - restrained
+  - clear
+  - editor-like
+column_goal:
+  - publish one stable WeChat column every morning
+  - build reader habit through consistent rhythm and title style
+coverage_primary:
+  - major-headlines
+  - ai
+  - technology
+  - business
+coverage_secondary:
+  - policy
+  - world
+  - internet-culture-when-high-impact
+title_pattern: "《{month}月{day}日最该看的几件大事》"
+default_sections:
+  - today-top-3
+  - tech-and-business
+  - world-and-policy
+  - what-to-watch-today
+commentary_level: brief-insight
+image_strategy: suggestion-only
+output_format: wechat-ready-markdown
+article_length: medium-form
