@@ -1,0 +1,4 @@
+interface:
+  display_name: "浴室沉思"
+  short_description: "生成并审校《浴室沉思》夜间公众号成稿"
+  default_prompt: "Use $write-bathroom-thoughts to draft, polish, or QA tonight's publish-ready 《浴室沉思》 WeChat essay in Chinese."

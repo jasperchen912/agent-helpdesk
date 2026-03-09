@@ -1,0 +1,55 @@
+series_name: 浴室沉思
+locale: zh-CN
+timezone: Asia/Shanghai
+publish_window: "20:00"
+cadence: daily
+audience: Chinese adult WeChat readers winding down at night
+format: publish-ready markdown
+core_promise: Write one urban night-time observation that lets readers recognize themselves without being preached to.
+cover_default: ./assets/default-cover.jpg
+title_pattern: "《浴室沉思｜{date:YYYY.MM.DD}｜{focus}》"
+focus_style:
+  - concrete object
+  - tiny action
+  - brief pause
+  - stray sound
+body_shape:
+  default_form: short reflective essay
+  default_structure: four-beat reflective essay
+  default_length: 700-1200 Chinese characters
+  short_length: 450-700 Chinese characters
+  long_length: 1100-1500 Chinese characters
+  read_time: 3-5 minutes
+tone:
+  - restrained
+  - observant
+  - introspective
+  - specific
+  - quiet
+  - urban
+topic_priority:
+  - user-provided trigger word or incident
+  - one small evening-life slice
+  - public event adapted into private reflection when explicitly needed
+continuity_axes:
+  - scene family
+  - anchor object
+  - narrator distance
+  - sentence cadence
+  - ending mode
+editorial_rules:
+  - write for recognition, not for shock
+  - stay with ordinary textures instead of grand abstractions
+  - avoid explicit preaching
+  - keep emotional temperature low-to-medium
+  - let the last paragraph land softly instead of concluding loudly
+  - prefer private-scale pressure over public-scale judgment
+risk_defaults:
+  - no same-day tragedy piggybacking
+  - no identifiable private details
+  - no pop-psych diagnosis
+delivery_contract:
+  required_frontmatter:
+    - title
+    - cover
+  publishing_handoff: wechat-publisher
