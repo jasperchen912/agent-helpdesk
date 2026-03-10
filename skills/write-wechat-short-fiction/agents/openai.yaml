@@ -1,0 +1,4 @@
+interface:
+  display_name: "公众号短篇小说"
+  short_description: "生成、改写并审校可直接发布的微信公众号短篇小说系列成稿"
+  default_prompt: "Use $write-wechat-short-fiction to draft, revise, or QA a publish-ready WeChat short-fiction series story in Chinese."

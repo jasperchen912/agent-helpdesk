@@ -1,0 +1,64 @@
+series_name_default: 短篇小说
+locale: zh-CN
+timezone: Asia/Shanghai
+publish_window: "21:00"
+cadence: recurring
+audience: adult WeChat readers who want compact contemporary fiction they can finish in one sitting on a phone
+format: publish-ready markdown
+core_promise: Deliver one complete short-story reading experience that feels literary, clear, concrete, and emotionally legible on WeChat.
+cover_default: ./assets/default-cover.jpg
+title_pattern: "《短篇小说｜{date:YYYY.MM.DD}｜{story_title}》"
+body_shape:
+  default_form: contemporary short story
+  default_structure: four-beat narrative arc
+  default_length: 1000-1800 Chinese characters
+  flash_length: 700-1000 Chinese characters
+  extended_length: 1800-2800 Chinese characters
+  serial_episode_length: 1000-1800 Chinese characters
+  soft_mobile_range: around 1000-1800 Chinese characters
+  paragraph_target: 5-9 short mobile-friendly paragraphs
+story_defaults:
+  viewpoint: one stable viewpoint per issue
+  cast_size: 1-3 consequential characters
+  conflict_scale: intimate human-scale pressure
+  ending_modes:
+    - quiet reveal
+    - reversal with residue
+    - suspended choice
+serialization:
+  use_when: premise benefits from multiple publish beats, not merely from being long
+  default_parts: 2-4
+  title_suffix_style: numeric markers such as （1） and （2）
+tone:
+  - contemporary
+  - precise
+  - humane
+  - restrained
+  - image-led
+  - phone-readable
+setting_priority:
+  - apartment interior
+  - transit
+  - workplace threshold
+  - family dining table
+  - convenience store
+  - rain or night street
+  - digital spillover into physical life
+editorial_rules:
+  - open with a concrete scene instead of a thesis
+  - anchor theme in behavior, object, or pressure
+  - keep exposition lighter than scene
+  - prefer one clean plot movement over many incidents
+  - let subtext do part of the work
+  - choose extended issue or serial based on dramatic shape rather than a hard character cap
+  - avoid preachy endings and slogan lines
+risk_defaults:
+  - no identifiable private individuals copied directly into fiction
+  - no glamorized self-harm or explicit gore
+  - no exploitative use of minors or vulnerable people
+  - no breaking-news fan fiction built on unverified facts
+delivery_contract:
+  required_frontmatter:
+    - title
+    - cover
+  publishing_handoff: wechat-publisher
