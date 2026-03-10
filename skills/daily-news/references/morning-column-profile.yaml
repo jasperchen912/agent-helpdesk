@@ -5,7 +5,7 @@ publish_time: "08:00"
 cadence: daily
 coverage_window: rolling-24h-until-publish-time
 carry_over_rule: only-when-materially-advanced
-audience: general tech-and-business readers
+audience: Chinese WeChat readers who want one reliable morning briefing on the day’s shared agenda
 tone:
   - restrained
   - clear
@@ -15,18 +15,21 @@ column_goal:
   - build reader habit through consistent rhythm and title style
 coverage_primary:
   - major-headlines
-  - ai
-  - technology
-  - business
-coverage_secondary:
-  - policy
+  - china-relevance
+  - policy-and-economy
   - world
+  - public-interest
+coverage_secondary:
+  - technology-when-broad-impact
+  - companies-and-markets
   - internet-culture-when-high-impact
 title_pattern: "《{month}月{day}日最该看的几件大事》"
 default_sections:
   - today-top-3
-  - tech-and-business
-  - world-and-policy
+  - china-policy-and-economy
+  - world
+  - tech-and-companies-when-needed
+  - investment-wind-vane
   - what-to-watch-today
 commentary_level: brief-insight
 image_strategy: suggestion-only

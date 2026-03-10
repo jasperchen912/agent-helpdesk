@@ -13,21 +13,23 @@ Use this file to map user requests to a stable response shape. Match the closest
 - use `morning column`
 - keep the exact title pattern
 - write one strong lead
-- keep `top 3 + grouped sections + what to watch today`
-- balance macro agenda with tech and business emphasis
+- keep `top 3 + grouped sections + 经济投资风向标 + what to watch today`
+- balance domestic, global, policy, and market signals around one shared agenda
+- make the `Top 3` detailed enough that each one reads like a small explainer, not a clip
+- make each `Top 3` item name concrete actors, dates, or numbers
 
-## Example 2: AI heavier but still daily column
+## Example 2: policy and macro heavier but still daily column
 
 ### Prompt
 
-`按默认晨报格式写今天的日报，但更关注 AI 和科技公司动态`
+`按默认晨报格式写今天的日报，但更关注政策、宏观和市场信号`
 
 ### Expected traits
 
 - still use `morning column`
 - keep the fixed title pattern unless the user changes it
-- let AI and company moves take more space in the sections
-- do not turn the whole piece into a narrow AI-only report unless the user explicitly asks for that
+- let policy, economy, and market signals take more space in the top 3 and `经济投资风向标`
+- do not turn the whole piece into a narrow market note unless the user explicitly asks for that
 
 ## Example 3: business-first daily column
 
@@ -40,7 +42,8 @@ Use this file to map user requests to a stable response shape. Match the closest
 - use `morning column` with `business focus`
 - rank stories by market and company impact
 - push human-interest or soft tech items downward
-- make `为什么重要` more business-facing
+- make `为什么重要` and `经济投资风向标` more business-facing
+- keep the `Top 3` detailed enough to explain how the signal reaches markets or companies
 
 ## Example 4: lighter news day
 
@@ -52,8 +55,9 @@ Use this file to map user requests to a stable response shape. Match the closest
 
 - keep the same column structure
 - reduce story count rather than padding
-- let the lead and `what to watch today` carry more weight
+- let the lead, `经济投资风向标`, and `what to watch today` carry more weight
 - keep the article compact and confident
+- even on a light day, keep the `Top 3` informative rather than skeletal
 
 ## Example 5: fast brief request
 
@@ -68,7 +72,33 @@ Use this file to map user requests to a stable response shape. Match the closest
 - compress each item
 - avoid section sprawl
 
-## Example 6: topic focus request
+## Example 6: wind-vane request
+
+### Prompt
+
+`按默认晨报写，并把经济投资风向标写得更有信息量`
+
+### Expected traits
+
+- still use `morning column`
+- keep the fixed title pattern and stable structure
+- expand the `经济投资风向标` with sharper macro, policy, and market signals
+- keep the rest of the piece general-news, not pure investment content
+
+## Example 7: more detailed top 3
+
+### Prompt
+
+`按默认晨报写，但 Top 3 每条都多给一点细节和背景`
+
+### Expected traits
+
+- still use `morning column`
+- keep the stable structure
+- upgrade the `Top 3` into concrete explainers with facts, numbers, timing, and transmission
+- keep grouped sections tighter than the `Top 3`
+
+## Example 8: topic focus request
 
 ### Prompt
 
@@ -81,7 +111,7 @@ Use this file to map user requests to a stable response shape. Match the closest
 - keep one core narrative through the whole piece
 - avoid unrelated general headlines
 
-## Example 7: fixed custom title
+## Example 9: fixed custom title
 
 ### Prompt
 

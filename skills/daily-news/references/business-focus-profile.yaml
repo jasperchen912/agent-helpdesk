@@ -12,9 +12,10 @@ coverage_secondary:
   - geopolitics-when-market-relevant
 story_order:
   - market-moving
+  - macro-and-policy
   - company-actions
-  - policy-and-trade
   - technology-with-commercial-impact
+wind_vane_weight: expanded-and-earlier
 commentary_bias:
   - explain-business-impact
   - emphasize-costs-incentives-and-positioning

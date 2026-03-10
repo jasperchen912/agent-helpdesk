@@ -1,19 +1,20 @@
 locale: zh-CN
 timezone: Asia/Shanghai
 daily_boundary: calendar-day
-audience: general tech-and-business readers
+audience: Chinese WeChat readers who want a concise, broadly useful daily news briefing
 tone:
   - restrained
   - clear
   - editor-like
 coverage_primary:
   - major-headlines
-  - ai
-  - technology
-  - business
-coverage_secondary:
-  - policy
+  - china-relevance
+  - policy-and-economy
   - world
+  - public-interest
+coverage_secondary:
+  - technology-when-broad-impact
+  - companies-and-markets
   - internet-culture-when-high-impact
 commentary_level: brief-insight
 image_strategy: suggestion-only
