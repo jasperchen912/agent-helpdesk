@@ -1,4 +1,4 @@
 interface:
-  display_name: "公众号晨报"
-  short_description: "生成固定8点发布、带经济投资风向标的公众号泛新闻晨报成稿"
-  default_prompt: "Write today's 08:00 China time WeChat general-news morning column in Chinese with the fixed title pattern, top 3 stories, grouped sections, an economic-and-investment wind-vane section, source dates, and a concrete watchlist."
+  display_name: "环球日报"
+  short_description: "生成《环球日报》每天一篇固定结构的中文公众号成稿"
+  default_prompt: "Write today's issue of 《环球日报》 in Chinese for 08:00 Asia/Shanghai with the fixed title pattern, one lead, a detailed top 3, grouped sections, an economic-and-investment wind-vane section, source dates, and a same-day watchlist."

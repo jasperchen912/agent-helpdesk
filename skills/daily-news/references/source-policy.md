@@ -9,6 +9,15 @@ Use this order when possible:
 3. Follow-up explainers for context
 4. Aggregators only for discovery, not as the main cited source
 
+## Feed Transport Rules
+
+- Treat `toprss.ifeed.cc` as a discovery index, not as the editorial source of truth.
+- If a feed arrives through `plink.anyfeeder.com`, `rsshub.app`, or another mirror, cite the original publisher in the article rather than the transport layer.
+- Prefer original feeds when they are stable and complete; use mirrors as intake fallback, not attribution fallback.
+- If a mirror strips timing, context, or source detail from a high-stakes story, go back to the publisher page or drop the item.
+- Do not treat search-result pages, redirect pages, or other non-canonical URLs as article sources.
+- Treat query-based Google News RSS as discovery-only unless you separately verify the publisher page; do not cite the Google wrapper as if it were Reuters or another newsroom.
+
 ## Selection Rules
 
 - Use mixed Chinese and English sources when that improves coverage.
@@ -16,6 +25,10 @@ Use this order when possible:
 - Merge duplicate angles into one item instead of repeating the same story.
 - Skip low-value virality unless it reflects a larger shift worth explaining.
 - Default to China-reader relevance when two stories look equally large on paper.
+- Use ranking, digest, and hot-list feeds only to discover or prioritize candidates; they do not satisfy sourcing requirements by themselves.
+- Use Chinese-language bridge feeds to improve transmission and framing, but do not let them replace stronger primary reporting on high-stakes international stories.
+- For high-stakes cross-border `Top 3` items, prefer at least one primary or official source plus one corroborating report or follow-up source when available.
+- Prefer sources that provide a usable publish timestamp; drop items that cannot be reliably placed inside the coverage window.
 
 ## Selection Rubric
 
@@ -56,12 +69,15 @@ Prefer `8-12` total stories for a normal full report, including the top 3. On sl
 - Mark fast-moving stories as `developing` when facts are still changing.
 - Separate confirmed facts from claims, estimates, allegations, and predictions.
 - If the available sourcing is weak or single-source, either qualify it clearly or drop the item.
+- If the item only survives through an empty summary, missing timestamp, or search-result link, treat it as weak sourcing and drop it.
 
 ## Attribution Rules
 
 - Every story must include a source name and publish date.
 - If multiple sources are used, cite the dominant reporting source and cross-check silently unless cross-checking changes the interpretation.
 - Do not imply firsthand certainty when the article is based on reported information.
+- Do not cite `AnyFeeder`, `RSSHub`, `TopRSS`, or another feed wrapper as if it were the newsroom or publisher.
+- If a cross-check materially changes confidence or interpretation, surface that uncertainty in the copy instead of hiding it.
 
 ## Day Boundary Rules
 
@@ -70,7 +86,7 @@ Prefer `8-12` total stories for a normal full report, including the top 3. On sl
 
 ## Column Continuity Rules
 
-- For the standing morning column, treat `08:00 Asia/Shanghai` as the publication cutoff.
+- For the standing issue of `《环球日报》`, treat `08:00 Asia/Shanghai` as the publication cutoff.
 - Prefer the latest reliable information available by the cutoff rather than waiting for perfect completeness.
 - Avoid using the same lead story on consecutive days unless there is a clear overnight development.
 - If a story continues across multiple days, change the angle to reflect what is newly important.
