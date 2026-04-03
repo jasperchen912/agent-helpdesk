@@ -1,0 +1,51 @@
+profile_name: global-daily
+locale: zh-CN
+timezone: Asia/Shanghai
+publish_time: "08:00"
+cadence: daily
+coverage_window: rolling-24h-until-publish-time
+carry_over_rule: only-when-materially-advanced
+audience: Chinese WeChat readers who want one reliable daily issue of 《环球日报》 on the day’s shared agenda
+tone:
+  - restrained
+  - clear
+  - editor-like
+column_goal:
+  - publish one stable issue of 《环球日报》 every morning
+  - build reader habit through one fixed structure and title style
+  - win the first phone screen with a fast summary and one strong lead
+  - keep the entry broad-reader-friendly while the body stays editor-like and information-dense
+coverage_primary:
+  - major-headlines
+  - china-relevance
+  - policy-and-economy
+  - world
+  - public-interest
+coverage_secondary:
+  - technology-when-broad-impact
+  - companies-and-markets
+  - internet-culture-when-high-impact
+title_pattern: "《环球日报》｜{month}月{day}日"
+metadata_line:
+  - include information cutoff by default
+  - include approximate read time when it improves mobile scanning
+first_screen_goal:
+  - let the reader grasp the day in roughly 10 seconds
+  - front-load one hard fact, one concrete stake, and one reason to keep reading
+  - prefer one shared-agenda fact, one market or cost transmission fact, and one domestic rule or public-value fact when the day supports it
+default_sections:
+  - metadata-line
+  - first-screen-three-lines
+  - lead
+  - today-top-3
+  - china-policy-and-economy
+  - world
+  - tech-and-companies-when-needed
+  - investment-wind-vane
+  - what-to-watch-today
+commentary_level: brief-insight
+image_strategy: suggestion-only
+output_format: wechat-ready-markdown
+article_length: medium-form
+reading_mode: mobile-first
+default_read_time: "4-5 minutes"
