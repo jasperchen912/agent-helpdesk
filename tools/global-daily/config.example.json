@@ -1,0 +1,145 @@
+{
+  "timezone": "Asia/Shanghai",
+  "publish_time": "08:00",
+  "hours_back": 36,
+  "max_items_per_feed": 8,
+  "max_total_items": 24,
+  "min_editorial_score": 18,
+  "role_min_scores": {
+    "official": 30,
+    "bridge": 28,
+    "international": 23,
+    "business": 24,
+    "tech": 34,
+    "science": 24
+  },
+  "source_min_scores": {
+    "BBC World": 28,
+    "虎嗅": 32,
+    "钛媒体": 34,
+    "华尔街见闻": 26
+  },
+  "role_caps": {
+    "official": 8,
+    "bridge": 5,
+    "international": 5,
+    "business": 6,
+    "tech": 4,
+    "science": 2
+  },
+  "cover_path": "../assets/global-daily-cover.svg",
+  "wechat_publish": {
+    "theme": "lapis",
+    "highlight": "solarized-light"
+  },
+  "feeds": [
+    {
+      "name": "新华社新闻_新华网",
+      "url": "https://plink.anyfeeder.com/newscn/whxw",
+      "role": "official",
+      "max_items": 6
+    },
+    {
+      "name": "人民日报",
+      "url": "https://plink.anyfeeder.com/people-daily",
+      "role": "official",
+      "max_items": 3
+    },
+    {
+      "name": "《联合早报》-中港台-即时",
+      "url": "https://plink.anyfeeder.com/zaobao/realtime/china",
+      "role": "bridge",
+      "max_items": 3
+    },
+    {
+      "name": "《联合早报》-国际-即时",
+      "url": "https://plink.anyfeeder.com/zaobao/realtime/world",
+      "role": "bridge",
+      "max_items": 3
+    },
+    {
+      "name": "人民网-国际新闻",
+      "url": "https://plink.anyfeeder.com/people/world",
+      "role": "bridge",
+      "max_items": 2
+    },
+    {
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "role": "international",
+      "max_items": 3
+    },
+    {
+      "name": "BBC Business",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "role": "international",
+      "max_items": 2
+    },
+    {
+      "name": "纽约时报中文网 国际纵览",
+      "url": "http://cn.nytimes.com/rss/news.xml",
+      "role": "bridge",
+      "max_items": 2
+    },
+    {
+      "name": "央视财经",
+      "url": "https://plink.anyfeeder.com/weixin/cctvyscj",
+      "role": "business",
+      "max_items": 2
+    },
+    {
+      "name": "中国日报: 财经",
+      "url": "https://plink.anyfeeder.com/chinadaily/caijing",
+      "role": "business",
+      "max_items": 2
+    },
+    {
+      "name": "财新网",
+      "url": "https://plink.anyfeeder.com/weixin/caixinwang",
+      "role": "business",
+      "max_items": 3
+    },
+    {
+      "name": "华尔街见闻",
+      "url": "https://plink.anyfeeder.com/weixin/wallstreetcn",
+      "role": "business",
+      "max_items": 2
+    },
+    {
+      "name": "界面新闻: 商业",
+      "url": "https://plink.anyfeeder.com/jiemian/business",
+      "role": "business",
+      "max_items": 2
+    },
+    {
+      "name": "36氪",
+      "url": "https://www.36kr.com/feed",
+      "role": "tech",
+      "max_items": 2
+    },
+    {
+      "name": "虎嗅",
+      "url": "https://rss.huxiu.com/",
+      "role": "tech",
+      "max_items": 1
+    },
+    {
+      "name": "钛媒体",
+      "url": "https://www.tmtpost.com/feed",
+      "role": "tech",
+      "max_items": 1
+    },
+    {
+      "name": "IT之家",
+      "url": "https://www.ithome.com/rss/",
+      "role": "tech",
+      "max_items": 2
+    },
+    {
+      "name": "果壳网 科学人",
+      "url": "https://plink.anyfeeder.com/guokr/scientific",
+      "role": "science",
+      "max_items": 1
+    }
+  ]
+}

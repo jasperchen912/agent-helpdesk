@@ -1,0 +1,28 @@
+{
+  "schema_version": "global-daily.bundle/v1",
+  "tool_name": "global-daily",
+  "generated_at": "2026-04-04T01:27:28.070664+08:00",
+  "repo_root": "/Users/jiajunch/Documents/personal_code/agent-helpdesk",
+  "issue": {
+    "date": "2026-04-04",
+    "title": "《环球日报》｜4月4日",
+    "timezone": "Asia/Shanghai",
+    "publish_time": "08:00",
+    "cover_path": "../assets/global-daily-cover.svg"
+  },
+  "artifacts": {
+    "bundle_path": "/Users/jiajunch/Documents/personal_code/agent-helpdesk/tools/global-daily/out/2026-04-04-global-daily.bundle.json",
+    "prompt_path": "/Users/jiajunch/Documents/personal_code/agent-helpdesk/tools/global-daily/out/2026-04-04-global-daily.prompt.txt",
+    "sources_path": "/Users/jiajunch/Documents/personal_code/agent-helpdesk/tools/global-daily/out/2026-04-04-global-daily.sources.json",
+    "discovery_path": "/Users/jiajunch/Documents/personal_code/agent-helpdesk/tools/global-daily/out/2026-04-04-global-daily.discovery.json",
+    "article_path": "/Users/jiajunch/Documents/personal_code/agent-helpdesk/tools/global-daily/out/2026-04-04-global-daily.md"
+  },
+  "drafting": {
+    "mode": "host-llm",
+    "article_format": "markdown",
+    "frontmatter_required": true,
+    "article_status": "pending",
+    "selected_item_count": 13,
+    "discovery_item_count": 4
+  }
+}

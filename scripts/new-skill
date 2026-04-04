@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/new-skill <skill-name> [--resources scripts,references,assets] [--examples] [--interface key=value]
+
+Create a skill in ./skills using Codex's skill-creator initializer, then validate it.
+EOF
+}
+
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+  usage
+  exit 0
+fi
+
+if [[ $# -lt 1 ]]; then
+  usage
+  exit 1
+fi
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SKILL_NAME="$1"
+shift
+
+SKILL_CREATOR_DIR="/Users/jiajunch/.codex/skills/.system/skill-creator/scripts"
+INIT_SCRIPT="$SKILL_CREATOR_DIR/init_skill.py"
+VALIDATE_SCRIPT="$ROOT_DIR/scripts/quick-validate-skill.py"
+
+if [[ ! -f "$INIT_SCRIPT" || ! -f "$VALIDATE_SCRIPT" ]]; then
+  echo "Required scripts not found." >&2
+  echo "Initializer: $INIT_SCRIPT" >&2
+  echo "Validator: $VALIDATE_SCRIPT" >&2
+  exit 1
+fi
+
+python3 "$INIT_SCRIPT" "$SKILL_NAME" --path "$ROOT_DIR/skills" "$@"
+
+NORMALIZED_NAME="$(printf '%s' "$SKILL_NAME" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+//; s/-+$//; s/-+/-/g')"
+python3 "$VALIDATE_SCRIPT" "$ROOT_DIR/skills/$NORMALIZED_NAME"
+
+echo "Created and validated: skills/$NORMALIZED_NAME"

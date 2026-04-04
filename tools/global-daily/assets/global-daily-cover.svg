@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="864" viewBox="0 0 1080 864" role="img" aria-labelledby="title desc">
+  <title id="title">Global Daily Cover</title>
+  <desc id="desc">Default cover image for the daily WeChat column 《环球日报》.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3efe4" />
+      <stop offset="100%" stop-color="#d9e4f5" />
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="864" fill="url(#bg)" />
+  <circle cx="190" cy="170" r="110" fill="#1f4b99" opacity="0.12" />
+  <circle cx="900" cy="720" r="160" fill="#8b3d2f" opacity="0.12" />
+  <rect x="96" y="96" width="888" height="672" rx="28" fill="#ffffff" opacity="0.78" />
+  <text x="140" y="230" font-size="36" font-family="Georgia, 'Times New Roman', serif" fill="#1f2a44">08:00 Asia/Shanghai</text>
+  <text x="140" y="340" font-size="86" font-family="Georgia, 'Times New Roman', serif" fill="#1f2a44">Global Daily</text>
+  <text x="140" y="430" font-size="86" font-family="Georgia, 'Times New Roman', serif" fill="#1f2a44">环球日报</text>
+  <text x="140" y="540" font-size="28" font-family="'Helvetica Neue', Arial, sans-serif" fill="#43506b">One fixed daily WeChat issue on policy, world, business, and public-interest news.</text>
+  <text x="140" y="610" font-size="28" font-family="'Helvetica Neue', Arial, sans-serif" fill="#43506b">Generated at 08:00 Asia/Shanghai and prepared for WeChat publishing.</text>
+  <rect x="140" y="665" width="220" height="16" fill="#8b3d2f" />
+</svg>

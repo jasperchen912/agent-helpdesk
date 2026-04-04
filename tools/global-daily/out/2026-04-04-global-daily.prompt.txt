@@ -1,0 +1,837 @@
+You are writing today's issue of 《环球日报》, the standing 08:00 China time WeChat daily news column.
+
+Follow these local references exactly:
+
+## global-daily-profile.yaml
+profile_name: global-daily
+locale: zh-CN
+timezone: Asia/Shanghai
+publish_time: "08:00"
+cadence: daily
+coverage_window: rolling-24h-until-publish-time
+carry_over_rule: only-when-materially-advanced
+audience: Chinese WeChat readers who want one reliable daily issue of 《环球日报》 on the day’s shared agenda
+tone:
+  - restrained
+  - clear
+  - editor-like
+column_goal:
+  - publish one stable issue of 《环球日报》 every morning
+  - build reader habit through one fixed structure and title style
+  - win the first phone screen with a fast summary and one strong lead
+  - keep the entry broad-reader-friendly while the body stays editor-like and information-dense
+coverage_primary:
+  - major-headlines
+  - china-relevance
+  - policy-and-economy
+  - world
+  - public-interest
+coverage_secondary:
+  - technology-when-broad-impact
+  - companies-and-markets
+  - internet-culture-when-high-impact
+title_pattern: "《环球日报》｜{month}月{day}日"
+metadata_line:
+  - include information cutoff by default
+  - include approximate read time when it improves mobile scanning
+first_screen_goal:
+  - let the reader grasp the day in roughly 10 seconds
+  - front-load one hard fact, one concrete stake, and one reason to keep reading
+  - prefer one shared-agenda fact, one market or cost transmission fact, and one domestic rule or public-value fact when the day supports it
+default_sections:
+  - metadata-line
+  - first-screen-three-lines
+  - lead
+  - today-top-3
+  - china-policy-and-economy
+  - world
+  - tech-and-companies-when-needed
+  - investment-wind-vane
+  - what-to-watch-today
+commentary_level: brief-insight
+image_strategy: suggestion-only
+output_format: wechat-ready-markdown
+article_length: medium-form
+reading_mode: mobile-first
+default_read_time: "4-5 minutes"
+
+## global-daily-template.md
+# Global Daily Template
+
+Use this template for the standing daily WeChat column `《环球日报》` published at `08:00` China time.
+
+## Best Use Cases
+
+- `《环球日报》` daily issue
+- Stable recurring morning edition
+- Habit-forming daily newsroom rhythm
+
+## Structure
+
+1. Fixed title in the format `《环球日报》｜X月X日`
+2. One light metadata line with information cutoff, and optional read-time estimate
+3. One fixed first-screen module: `先看三句`
+4. One short lead that explains the day's main signal
+5. `Today's 3 most important stories`
+6. `2-3` grouped sections for the rest of the article
+7. One fixed `经济投资风向标` section
+8. `What to watch today`
+9. Optional image suggestions
+10. Source summary
+
+## Article Skeleton
+
+### Title
+
+- Use the exact title pattern `《环球日报》｜X月X日` unless the user overrides it
+
+### Metadata line
+
+- Put one light metadata line under the title
+- Default content:
+  - information cutoff
+  - optional read-time estimate when helpful
+- Keep the tone neutral and useful, not promotional
+
+### 先看三句
+
+- Put this directly under the title
+- Use exactly `3` short bullets or lines
+- Each line should contain one concrete fact, stake, or shift, not a vague mood summary
+- Make the block readable in about `10` seconds on a phone
+- Do not simply repeat the lead in shorter wording
+- When the day supports it, prefer this three-part mix:
+  - one shared-agenda or conflict fact
+  - one market, cost, or transmission fact
+  - one domestic rule, policy, or public-value fact
+
+### Lead
+
+- One short paragraph
+- Explain the common thread of the day
+- Front-load one hard fact, named actor, or concrete stake before abstract synthesis when possible
+- Frame why a China-based morning reader should care now
+- The lead should be easy to enter for a broad reader but still point toward the more editor-like logic of the body
+
+### Today's 3 most important stories
+
+For each item include:
+
+- `Headline`
+- `What happened`: one short factual block that states the new development cleanly
+- `Concrete facts`: one short block with the key actor, figure, timing, or decision
+- `Key friction / next step`: one short block that says what is unresolved, what changed overnight, or what the reader should watch next
+- `Why it matters / who it hits`: one short block that explains where the impact transmits next and who feels it first
+- `Source / date`
+
+Treat `Top 3` as concrete information blocks, not as compressed clips. They should be visibly more detailed than the grouped-section items and should contain named actors plus at least one hard fact.
+One event chain should usually occupy only one `Top 3` slot. If two candidate items are really the same story with different angles, merge them into one stronger explainer.
+Let item `1` feel like the clear lead and let items `2-3` widen the reader's picture of the day rather than echo it.
+If the day supports it, enrich major `Top 3` items with one more layer such as `why now`, a transmission chain, or a market mechanism before adding extra low-value items elsewhere.
+
+### Grouped sections
+
+Use `2-3` sections depending on the day. Default section order:
+
+- China policy and economy
+- World
+- Tech and companies only when the story set warrants it
+
+For each section:
+
+- Add a short section intro only when it adds information
+- Include `2-3` stories
+- Keep these items faster than the `Top 3`; do not turn every section item into a second lead
+- Default item rhythm:
+  - `What happened`
+  - `Who it hits / why read`
+  - `Source / date`
+- Add a separate hard-fact line only when the number, decision, or actor is the core point of the item
+- The grouped sections should feel like a quick scan, not a second batch of explainers
+- Prefer variety inside the domestic section when the day allows it; a good issue often balances one rules/governance item, one real-economy or innovation item, and optionally one demand or public-life item
+
+### 经济投资风向标
+
+- Add a short fixed section after the grouped sections
+- Default to `3-4` signals; use `2` on slow days and `4` when macro, rates, rules, or cost pressure clearly support it
+- Prefer rates, currencies, policy tone, industry momentum, market risk appetite, commodity moves, data releases, or other macro signals with clear investor relevance
+- For each signal include:
+  - `Signal`
+  - `What changed`
+  - `Why it matters`
+- Name each signal with a short label that a repeat reader can scan quickly
+- Keep the tone directional and explanatory, not prescriptive
+- When helpful, write the `Why it matters` line so it names what the reader should watch first
+
+### What to watch today
+
+- Add `3-5` concrete watch points for the same day
+- Prefer launches, meetings, votes, deadlines, earnings, policy signals, or likely follow-up developments
+- Each point should name the actor, trigger, or consequence to watch
+- If helpful, include the likely time window or decision point
+
+### Image suggestions
+
+Include only when useful:
+
+- `Cover image suggestion`
+- `Section image suggestion`
+- `Search prompt`
+
+### Source summary
+
+- List the main outlets or official sources used
+
+## Guardrails
+
+- Write as `《环球日报》`, not as a generic daily article.
+- Prefer the most recent reliable update available by `08:00 Asia/Shanghai`.
+- Avoid reusing yesterday's lead story unless there is a material overnight change.
+- Keep the rhythm stable enough that readers recognize `《环球日报》` every day.
+- Make the first screen useful even if the reader stops after the first scroll.
+- Keep the top easy to enter, but let the body stay precise and editor-like.
+- Let the lead and top 3 reflect the shared public agenda before narrower sector stories.
+- Keep the `经济投资风向标` short and high-signal; never let it turn into stock picking.
+- If a `Top 3` item still feels like a headline stub, add one hard fact and one next-step pressure before moving on.
+- Do not let the whole article fall into one repeated sentence pattern.
+- Prefer adding explanatory value over adding raw item count.
+
+## feed-sources.md
+# Feed Sources
+
+Use this file to keep the standing source mix for `《环球日报》` aligned with its editorial goal.
+
+## Discovery Principle
+
+`toprss.ifeed.cc` is useful as a feed-discovery surface, not as a flat endorsement of source quality. Many entries are delivered through mirrors such as `plink.anyfeeder.com` or `rsshub.app`; treat those as transport layers and attribute the final article to the original publisher.
+
+The concrete automation feed URLs belong in `tools/global-daily/config.example.json` and `tools/global-daily/generate_global_daily.py`. Keep that tool-level feed list aligned with the editorial roles below instead of copying raw URLs into the skill prompt.
+
+Split the standing source set into six editorial roles:
+
+### 1. Chinese public agenda and official signals
+
+Use these to capture the shared domestic agenda first:
+
+- 新华社 / 新华网
+- 央视新闻 / 中国政府网
+- 中国人民银行
+- 国家统计局
+- 财政部 / 海关总署 / 证监会 and other directly relevant agencies
+- 人民日报 / 光明日报 / 半月谈 / 求是网 when official-public framing matters
+
+These sources surface the domestic policy, economy, regulation, and public-interest signals that matter most to a Chinese morning reader.
+
+### 2. Chinese-language broad news bridge
+
+Use these to enrich overnight scanning and improve Chinese-language transmission without abandoning primary reporting:
+
+- 《联合早报》-中港台-即时
+- 《联合早报》-国际-即时
+- 纽约时报中文网 国际纵览
+- BBC 中文网
+- 中国日报: 时政
+- 腾讯新闻：国际
+- iDaily 每日环球视野
+
+These sources are useful when the final article is in Chinese and the editor needs a fast, broad, Chinese-language picture of what moved overnight. They are especially helpful for early framing, headline wording, and section assembly.
+
+Default use:
+
+- discover overnight developments quickly
+- improve Chinese-language framing for international stories
+- cross-check whether a story is traveling as a broad public agenda item
+
+### 3. International macro and primary reporting
+
+Use these to capture the overnight global agenda and cross-check fast-moving world stories:
+
+- Reuters World / Business / Markets
+- AP Top News / World / Business
+- BBC World / Business
+- SCMP News when filtered down to world, China, tech-policy, and macro/economy items
+- FT or WSJ reporting when they materially add context to macro, policy, or market moves
+
+These sources help define the global part of the agenda, especially when the overnight signal affects markets, trade, commodities, conflict risk, or policy expectations.
+
+### 4. China business and markets depth
+
+Use these after the public agenda is set, especially for the `Top 3`, company stories, and `经济投资风向标`:
+
+- 第一财经
+- 财新
+- 财联社
+- 界面新闻: 商业
+- 华尔街见闻
+- 财富中文网 / 商业
+- 财富中文网 / 科技
+
+These sources improve Chinese-language business framing, market texture, company detail, and cross-sector implications. They can supply section stories and occasionally a `Top 3` item, but they should not displace a bigger public-interest or macro lead without a clear reason.
+
+### 5. Tech, science, and platform-impact detail
+
+Use these for sector detail only after checking that the story matters beyond a niche product crowd:
+
+- 36氪
+- 虎嗅
+- 钛媒体
+- 极客公园
+- IT之家
+- 果壳网
+- Readhub / 开发者资讯
+
+These sources help the column cover AI, big tech, consumer platforms, hardware, science, and internet-product shifts with better specificity. They are most valuable when a technology story has clear business, regulatory, platform-power, or mainstream daily-life impact.
+
+When using tech-detail feeds, prefer company results, platform rules, supply-chain moves, or infrastructure changes. Down-rank brand campaigns, conference hype, consumer-product launches, game long-features, and narrative interviews unless they clearly change the broader agenda.
+
+### 6. Discovery-only and heat-check feeds
+
+Use these to spot candidate topics or check whether something is spreading, but never as the main cited source:
+
+- 微博热搜榜
+- 知乎热榜
+- 知乎日报
+- ZAKER 精读新闻
+- Readhub - 每日早报
+- Google News 的站内搜索 RSS（例如定向 Reuters 的 query feed）
+- other ranking, digest, or aggregator feeds
+
+These feeds are useful for discovery, gap detection, and agenda comparison. They are not evidence by themselves.
+
+## Source Weighting
+
+Use the source set by editorial role, not as a flat pool.
+
+### Tier A: lead-story candidates
+
+These sources can supply stories that lead the article when the development has clear China-reader, public, market, or policy impact:
+
+- major Chinese official announcements
+- Reuters / AP / BBC primary reporting on major global developments
+- major macro releases, filings, and agency statements
+- Chinese-language broad-news bridge feeds only when they point to a genuinely shared agenda item that is then confirmed elsewhere
+- authoritative macro, policy, or economic releases
+
+Default use:
+
+- choose the day's shared agenda
+- support the lead paragraph
+- supply 1-2 of the top 3 stories
+
+### Tier B: section-story candidates
+
+These sources are usually better for the `国内/政策与经济`, `国际`, and `科技与公司` body sections than for the lead story:
+
+- 《联合早报》-中港台-即时
+- 《联合早报》-国际-即时
+- 中国日报: 时政
+- 第一财经
+- 财新
+- 财联社
+- 界面新闻: 商业
+- 华尔街见闻
+- 财富中文网 / 商业
+- 财富中文网 / 科技
+- Reuters Markets / Business
+- BBC Business
+- company filings or official newsroom updates when the story is already selected
+
+Default use:
+
+- enrich Chinese-language framing
+- find section-worthy market, company, and sector developments
+- add context after the shared agenda is set
+
+### Tier C: confirmation or detail sources
+
+These sources should often confirm or deepen an already selected story rather than define the whole column by themselves:
+
+- 36氪
+- 虎嗅
+- 钛媒体
+- 极客公园
+- IT之家
+- 果壳网
+- Readhub / 开发者资讯
+- specialist outlets for sector detail
+- official company blogs for niche product updates
+- market commentary or strategy notes only when they clarify the direction of travel instead of replacing primary reporting
+- ranking and digest feeds only for discovery or heat-checking
+
+Default use:
+
+- confirm dates, release scope, filings, quotes, and market implications
+- sharpen `为什么重要`
+- supply detail for topic-focus or `经济投资风向标` items
+
+## Lead Selection Rules
+
+- Do not let a niche company announcement lead the whole issue of `《环球日报》` unless it clearly changes markets, policy, platform power, or mainstream daily life.
+- Prefer a China-relevant macro or public-interest lead when several stories compete.
+- Use specialist business or tech outlets to improve framing, but not as the sole basis for a major headline if stronger primary or broad reporting exists.
+- Use Chinese-language bridge feeds to improve transmission into a Chinese morning-news frame, but still confirm high-stakes stories with primary reporting, official releases, or multiple reputable outlets.
+- If the day is light, it is acceptable for a high-impact company announcement to enter the top 3, but it should still be written in a broad reader-facing frame.
+
+## Editorial Use
+
+- Do not treat every company newsroom post as a lead story.
+- Do not let sector media overwhelm the shared agenda; use them to improve framing and specificity after the lead is set.
+- Do not confuse feed mirrors, ranking pages, or aggregator wrappers with the reporting source.
+- Use official sources for confirmation, detail, and original framing.
+- Keep `《环球日报》` balanced: public agenda first, sector detail second.
+- If an official announcement matters only inside one product ecosystem, it should usually stay in a section rather than become the headline of the day.
+- Use macro and policy sources to support the `经济投资风向标`, but keep the section explanatory rather than tactical.
+
+## Maintenance
+
+- Prefer feeds that are stable, machine-readable, and close to the original publisher.
+- If a mirrored feed on `plink.anyfeeder.com` or `rsshub.app` is the most stable transport, keep it, but still record the publisher as the source of record.
+- Prefer direct institution feeds for macro and policy when they exist, especially central-bank, rates, trade, and regulatory release feeds.
+- Remove feeds that frequently emit search-result links, archive links, or other non-canonical URLs instead of newsroom article URLs.
+- Remove feeds that frequently omit usable publish timestamps or summaries; they create ranking noise and stale carry-over risk.
+- If a feed becomes noisy or unreliable, replace it with another source in the same editorial role instead of expanding the feed list without bound.
+- If a source changes quality, adjust its tier before removing it entirely.
+
+## source-policy.md
+# Source Policy
+
+## Source Priority
+
+Use this order when possible:
+
+1. Official announcements, filings, transcripts, and agency statements
+2. Primary reporting from reputable outlets
+3. Follow-up explainers for context
+4. Aggregators only for discovery, not as the main cited source
+
+## Feed Transport Rules
+
+- Treat `toprss.ifeed.cc` as a discovery index, not as the editorial source of truth.
+- If a feed arrives through `plink.anyfeeder.com`, `rsshub.app`, or another mirror, cite the original publisher in the article rather than the transport layer.
+- Prefer original feeds when they are stable and complete; use mirrors as intake fallback, not attribution fallback.
+- If a mirror strips timing, context, or source detail from a high-stakes story, go back to the publisher page or drop the item.
+- Do not treat search-result pages, redirect pages, or other non-canonical URLs as article sources.
+- Treat query-based Google News RSS as discovery-only unless you separately verify the publisher page; do not cite the Google wrapper as if it were Reuters or another newsroom.
+
+## Selection Rules
+
+- Use mixed Chinese and English sources when that improves coverage.
+- Prefer high-signal stories with clear public, policy, market, platform, or business impact.
+- Merge duplicate angles into one item instead of repeating the same story.
+- Skip low-value virality unless it reflects a larger shift worth explaining.
+- Default to China-reader relevance when two stories look equally large on paper.
+- Use ranking, digest, and hot-list feeds only to discover or prioritize candidates; they do not satisfy sourcing requirements by themselves.
+- Use Chinese-language bridge feeds to improve transmission and framing, but do not let them replace stronger primary reporting on high-stakes international stories.
+- For high-stakes cross-border `Top 3` items, prefer at least one primary or official source plus one corroborating report or follow-up source when available.
+- Prefer sources that provide a usable publish timestamp; drop items that cannot be reliably placed inside the coverage window.
+
+## Selection Rubric
+
+Score each candidate story before drafting. Use a `0-2` score for each dimension.
+
+### Positive dimensions
+
+- `importance`: Does it affect policy, markets, major platforms, or public life?
+- `china-reader relevance`: Will a Chinese WeChat reader feel this matters this morning?
+- `freshness`: Did it materially happen or materially advance in the target window?
+- `public-interest value`: Does it help explain the shared agenda of the day rather than just a niche corner?
+- `explanatory value`: Does it help explain a larger shift, not just a one-off event?
+- `section fit`: Does it strengthen one of the default sections?
+
+### Negative dimensions
+
+- `duplication penalty`: Is it just another angle on a story already selected?
+- `noise penalty`: Is it mostly virality, outrage bait, or low-consequence chatter?
+
+### Decision rule
+
+- Strong keep: total score `8+` with no major sourcing problem
+- Borderline: total score `6-7`; keep only if the news day is light or the item adds needed variety
+- Drop: total score `5 or below`, or any item with unresolved credibility issues
+
+Prefer `8-12` total stories for a normal full report, including the top 3. On slow days, go lower.
+
+## Wind-Vane Rules
+
+- Build `经济投资风向标` from macro, policy, rates, currency, commodity, sector-temperature, or risk-appetite signals.
+- Prefer developments that change the direction of travel, not just routine price noise.
+- Keep each signal short: what changed, what it suggests, and why a reader should care.
+- Do not turn the section into explicit buy/sell advice or a list of stock picks.
+- If the day has only one clean signal, keep the section to one strong point rather than padding it.
+
+## Uncertainty Rules
+
+- Mark fast-moving stories as `developing` when facts are still changing.
+- Separate confirmed facts from claims, estimates, allegations, and predictions.
+- If the available sourcing is weak or single-source, either qualify it clearly or drop the item.
+- If the item only survives through an empty summary, missing timestamp, or search-result link, treat it as weak sourcing and drop it.
+
+## Attribution Rules
+
+- Every story must include a source name and publish date.
+- If multiple sources are used, cite the dominant reporting source and cross-check silently unless cross-checking changes the interpretation.
+- Do not imply firsthand certainty when the article is based on reported information.
+- Do not cite `AnyFeeder`, `RSSHub`, `TopRSS`, or another feed wrapper as if it were the newsroom or publisher.
+- If a cross-check materially changes confidence or interpretation, surface that uncertainty in the copy instead of hiding it.
+
+## Day Boundary Rules
+
+- Default to the current `Asia/Shanghai` calendar day.
+- If a major story started earlier but materially changed today, include it and note that it is a carry-over.
+
+## Column Continuity Rules
+
+- For the standing issue of `《环球日报》`, treat `08:00 Asia/Shanghai` as the publication cutoff.
+- Prefer the latest reliable information available by the cutoff rather than waiting for perfect completeness.
+- Avoid using the same lead story on consecutive days unless there is a clear overnight development.
+- If a story continues across multiple days, change the angle to reflect what is newly important.
+- Avoid repeating the same `经济投资风向标` conclusion on consecutive days unless the signal truly persisted and materially strengthened.
+
+## golden-sample.md
+# Golden Sample
+
+Use this file as the style anchor for `《环球日报》`. Do not copy phrases mechanically; match the pacing, density, and editorial restraint.
+
+For a concrete full article example, also read `references/global-daily-final-sample.md`.
+
+## What Good Looks Like
+
+- The title is direct and high-density.
+- The title is followed by one light metadata line with the cutoff and, when helpful, the read time.
+- The first screen tells the reader the day's three sharpest facts or stakes in one quick scan.
+- The lead names the day's common thread instead of listing headlines.
+- The top 3 stories each work as semi-explainers with facts, key detail, and transmission.
+- The article moves from the biggest shared public signal to narrower sector stories without using the same event chain twice in `Top 3`.
+- The `经济投资风向标` is short, specific, and directional.
+- The close ends with a concrete watchlist, not a long conclusion.
+- The first screen is broad-reader-friendly, but the body still feels like restrained editor copy rather than social posting.
+
+## House Style
+
+- Write in clean Simplified Chinese.
+- Keep sentences moderately short.
+- Prefer one idea per paragraph.
+- Avoid filler transitions and dramatic adjectives.
+- Sound like an informed editor, not a commentator trying to win an argument.
+- Make the entry easy, but do not flatten the body into overly simple copy.
+
+## Sample Shape
+
+### Title
+
+`《环球日报》｜3月9日`
+
+### Metadata line
+
+Put one light line under the title.
+
+Example pattern:
+
+`信息截至 2026 年 3 月 9 日 08:00（Asia/Shanghai）｜约 5 分钟读完`
+
+### First-screen pattern
+
+Put `先看三句` directly under the title.
+
+Example pattern:
+
+- `伊朗再次发动袭击，市场已经不再相信冲突会很快结束。`
+- `油价和元件价格一起上行，外部冲击正在沿着成本链传导。`
+- `信用、税务和数据规则继续收紧，国内经营环境还在被重新塑形。`
+
+### Lead pattern
+
+Start with one sentence that names the common thread of the day.
+When possible, get one hard fact, named actor, or concrete stake onto the screen before the abstract synthesis.
+The opening should feel like an easy entry for a broad reader, then quickly hand the reader into a denser newsroom-style body.
+
+Example pattern:
+
+`今天真正值得看的，不是某一条孤立刷屏的消息，而是政策、市场和国际风险三条线索正在同时抬高一天的判断门槛。`
+
+Follow with one or two sentences that translate that pattern into reader value.
+
+### Body pattern
+
+For each major story:
+
+- first block: what happened
+- second block: concrete facts such as who did what, on what date, at what scale, or with what number
+- third block: the specific point of tension, unresolved issue, or next step
+- fourth block: why it matters now and where the effect transmits next
+
+Keep these blocks compact but complete. The reader should understand the story without immediately needing another article. If a block does not contain at least one hard fact, it is probably still too abstract.
+Do not let two `Top 3` items cover the same event chain unless the distinction is truly meaningful to the reader.
+When a `Top 3` item is already strong, prefer adding one more layer such as `why now`, a transmission chain, or a market mechanism instead of adding weaker new items elsewhere.
+
+For grouped-section items, compress the rhythm. Most of them should be readable as:
+
+- what happened
+- who it hits / why read
+- source / date
+
+### 风向标 pattern
+
+Add `3-4` compact signals after the main sections when the day supports it.
+
+For each signal:
+
+- name the signal clearly
+- say what changed
+- explain why it matters to the direction of policy, markets, or risk appetite
+- when useful, name what the reader should watch first
+- stop before it turns into advice
+
+### Watchlist pattern
+
+End with `3-5` concrete watch points.
+
+Example pattern:
+
+`上午如果出现新的政策细则，市场会马上从方向判断切到节奏判断。`
+
+## global-daily-final-sample.md
+# Global Daily Final Sample
+
+Use this file as the concrete full-length style anchor for the standing `08:00` issue of `《环球日报》`.
+
+## Sample Article
+
+`《环球日报》｜3月9日`
+
+*信息截至 2026 年 3 月 9 日 08:00（Asia/Shanghai）｜约 5 分钟读完*
+
+### 先看三句
+
+- 地缘风险没有退场，市场开始重新定价油价、运价和利率压力。
+- 硬件链条的成本压力正在从芯片扩散到更基础的元件和物流环节。
+- 国内经营环境继续向统一规则和数据化治理收束，规则变量正在变得更重要。
+
+今天最值得连起来看的，不是几条孤立刷屏的 headline，而是地缘风险怎样通过油价、物流和元件价格一路传到企业成本端，同时国内的信用、税务和创新规则还在继续塑造经营环境。对《环球日报》的中国读者来说，重点不是记住所有 headline，而是判断哪些变量已经开始改变企业预算、融资预期和终端价格。
+
+### 今天最重要的三件事
+
+**1. 地缘风险升级后，市场不再只看战场，而是开始重算成本链**
+发生了什么：如果当天的国际主线已经从军事对抗延伸到油价、航运和利率预期，它就不再只是“国际新闻”，而是在改写全球成本体系。
+具体事实：一个合格的 `Top 3` 大条，至少要写清楚谁在行动、哪项能力仍然保留、油价或运价变动到什么水平，以及这种变化发生在什么时候。
+卡点 / 下一步：接下来最值得盯的，不只是冲突会不会升级，而是相关航运预期、外交缓冲空间和风险偏好会不会一起恶化。
+为什么重要 / 对谁有影响：先被影响的是能源、运输、出口链和市场风险偏好，随后才会回到更广义的制造成本和利率预期。
+来源 / 日期：新华社，YYYY-MM-DD；Reuters，YYYY-MM-DD
+
+**2. 国内规则建设继续推进，影响的不只是合规，更是融资与经营边界**
+发生了什么：如果当天有信用、税务、评价体系或数据治理类文件出台，重要的往往不是表述本身，而是它会不会被接成可执行的规则链。
+具体事实：一个好的写法，不只要交代文件说了什么，还要点出统一规则、公示渠道、信用修复或融资支持这些具体机制。
+卡点 / 下一步：真正要看的是地方和部门能不能把数据共享、流程标准和法律配套尽快落地，否则就容易停留在口径统一。
+为什么重要 / 对谁有影响：先受影响的是中小微企业融资、企业合规成本和地方营商环境，这类规则建设往往决定企业以后怎样被评价、授信、修复和申诉。
+来源 / 日期：人民日报，YYYY-MM-DD
+
+**3. 硬件链条的成本压力如果开始外溢，就值得进入前三**
+发生了什么：公司和行业新闻很多，但真正值得进入 `Top 3` 的，是那种能把成本、需求、价格或监管变化和更大环境连起来的动作。
+具体事实：如果写到硬件或制造链条，就要交代涨价是从哪一层扩到哪一层，涉及哪些材料、元件、交付周期或平台收费变化，而不是只写“涨价了”。
+卡点 / 下一步：要继续观察的是，更多元件厂商、整机品牌和平台会不会跟进调价、加收附加费或延长交期，从而把上游压力真正传到零售端。
+为什么重要 / 对谁有影响：先受影响的是制造商、跨境卖家和供应链利润率，随后才会传导到终端价格和用户感知。
+来源 / 日期：IT之家，YYYY-MM-DD；第一财经，YYYY-MM-DD
+
+### 国内与政策经济
+
+国内线索更适合从“规则如何塑形”“创新如何转化”“需求怎样表现”三条线来读。
+
+**平台涉税信息报送进入常态化阶段**
+发生了什么：平台涉税信息开始按季稳定报送，平台经营数据进一步显性化。
+影响谁 / 为什么看：先受影响的是平台商户、供应链开票和税务合规成本，这类变化往往会反向塑造平台生态，也让平台经营越来越多地进入统一的数据治理框架。
+来源 / 日期：人民日报，YYYY-MM-DD
+
+**专利产业化率继续上行**
+发生了什么：如果专利调查显示产业化率和平均收益同步提高，这说明创新链条开始更顺畅地向产业端转化。
+影响谁 / 为什么看：先被影响的是制造业、科研合作和产业投资判断。写这类条目时，最好点出平均收益金额、合作比例或产业端回报，而不只是说“创新更好了”。
+来源 / 日期：人民日报，YYYY-MM-DD
+
+**体验式消费继续给需求端加温**
+发生了什么：如果文旅、科技体验和赛事活动继续抬高消费参与度，这类线索可以作为当天国内需求端的温度补充。
+影响谁 / 为什么看：先受影响的是本地服务业、文旅运营和消费场景更新，它能避免国内段落只有硬规则、没有生活温度。
+来源 / 日期：新华社，YYYY-MM-DD
+
+### 国际
+
+国际段落的任务不是补齐版面，而是告诉读者外部环境今天究竟改了哪一个变量。
+
+**战事仍在快速变化**
+发生了什么：如果当天国际段落仍在围绕冲突推进，就要明确哪些表态或战场信息仍处于快速变化状态。
+影响谁 / 为什么看：这会先影响区域基础设施、航运安全和市场情绪，因为读者要知道哪些是确认事实，哪些仍是战时叙事。
+来源 / 日期：新华社，YYYY-MM-DD
+
+**战略卡点正在成为更显性的对抗工具**
+发生了什么：如果运输线、关键材料或战略要害环节开始被更频繁地当作对抗工具，国际段落就不能只写战场动作。
+影响谁 / 为什么看：最先受影响的是全球供应链安全、关键材料价格和跨境企业的预期管理。
+来源 / 日期：纽约时报中文网，YYYY-MM-DD
+
+### 经济投资风向标
+
+**[能源] 油价重新主导成本预期**
+变化了什么：如果油价和运价继续抬头，市场就会重新提高对成本压力的估计。
+为什么重要：先看航运和运价，再看制造与出口链，只要冲突没有明确降温，这条成本线就很难迅速回落。
+
+**[利率预期] 传统避险逻辑暂时让位于通胀担忧**
+变化了什么：如果冲突升级时金银并未同步走强，反而回落，就说明市场更在意通胀和利率路径。
+为什么重要：先看市场对通胀和利率路径的重新定价，这比单纯的避险情绪更能解释当天的资产表现。
+
+**[制度] 国内经营环境继续向统一规则收束**
+变化了什么：信用、税务、评价和信息报送这类制度变量正在持续增强。
+为什么重要：先看中小微企业融资、平台商户合规和地方营商环境，这些领域会最早感受到规则统一带来的变化。
+
+**[元件价格] 硬件供应链的成本压力继续外溢**
+变化了什么：涨价范围如果从芯片扩展到 PCB、物流和基础材料，说明硬件链条的压力已经下沉。
+为什么重要：先看制造商和跨境卖家利润率，再看整机售价和企业采购预算，压力已经开始沿链路往下传。
+
+### 今天还要继续看什么
+
+- 上午如果出现新的政策细则或部门表态，市场会马上从“方向判断”切到“节奏判断”。
+- 如果霍尔木兹海峡或其他关键航运节点迟迟没有恢复信号，油价、运价和交付压力就还可能继续被抬高。
+- 如果更多平台或硬件公司跟进收费、调价或产能调整，成本传导就会从个案变成行业信号。
+- 如果体验式消费继续沿着文旅、科技体验和赛事场景扩散，国内需求端就会多出一层可验证的温度。
+
+## What This Sample Locks In
+
+- Fixed `《环球日报》` title pattern
+- One light metadata line under the title
+- One fixed `先看三句` module for the first phone screen
+- One strong lead paragraph that is easy to enter but still editor-like
+- Top 3 written as concrete explainers with actors, facts, next-step pressure, and transmission
+- No double-counting of the same event chain inside the `Top 3`
+- Clear `why it matters / who it hits` line on every major item
+- Grouped sections written in a faster scan rhythm than the `Top 3`
+- One fixed `经济投资风向标` section with `3-4` compact signals when the day supports it
+- A concrete `what to watch today` ending instead of a long conclusion
+
+Use this title exactly:
+《环球日报》｜4月4日
+
+Write the final output as Markdown only. It must start with frontmatter:
+---
+title: 《环球日报》｜4月4日
+cover: ../assets/global-daily-cover.svg
+---
+
+Rules:
+- Output Simplified Chinese.
+- Do not include a duplicate H1 after the frontmatter title.
+- Keep the fixed `《环球日报》` rhythm.
+- Use only the citable feed items below for factual claims and citations. Do not invent facts.
+- Cite each major item with source name and publish date.
+- End with a short "today to watch" section.
+- Include image suggestions only if they genuinely help.
+
+Citable feed items:
+- source: 人民日报
+  role: official
+  published_at: 2026-04-03T08:26:06+08:00
+  title: 国办印发《关于建立企业信用状况综合评价体系的实施方案》
+  link: http://paper.people.com.cn/rmrb/pc/content/202604/03/content_30148973.html
+  summary: 2026年04月03日 新华社北京4月2日电 日前，国务院办公厅印发《关于建立企业信用状况综合评价体系的实施方案》（以下简称《实施方案》）。 《实施方案》指出，要建立企业信用状况综合评价体系制度框架，更好发挥公共信用评价结果在企业信用状况综合评价中的基础性作用，推动公共信用评价和市场化信用评价相互融合，逐步形成统一的企业信用状况综合评价体系。 《实施方案》要求，完善公共信用评价体系，统一公共信用评价规则、行业信用评价管理、公共信用评价结果公示渠道，健全行业信用评价协同机制，规范发展市场化信用评价，加快推进公共信用评价与市场化信用评价融合应用，更好发挥信用评价对中小微企业融资的支持作用，完善信用修复后的评价更新调整机制，畅通异议申诉处理渠道，落实信用评价管理职责。 《实施方案》强调，各地方各有关部门要抓好贯彻落实，强化数据共享支撑，优化信用评价流程，规范信用评价应用，推动建立健全企业信用评价相关法律法规制度体系，做好立改废释工作，营造公平竞争市场环境，助力全国统一大市场建设。
+- source: IT之家
+  role: tech
+  published_at: 2026-04-03T18:34:45+08:00
+  title: 市场监管总局要求美团、京东、淘宝闪购三大外卖平台 6 月 1 日前完成外卖食品安全整改
+  link: https://www.ithome.com/0/935/868.htm
+  summary: IT之家 4 月 3 日消息，市场监管总局昨日在北京召开外卖平台企业行政指导会，指导美团、淘宝闪购、京东三家平台企业严格落实即将于 6 月 1 日正式实施的《网络餐饮服务经营者落实食品安全主体责任监督管理规定》（IT之家以下简称《规定》），强化企业食品安全主体责任，采取有效措施保障消费者饮食安全。 会议指出，网络餐饮服务的快速发展极大便利了群众生活，但随之而来的食品安全风险不容忽视。市场监管总局落实党中央、国务院关于网络餐饮食品安全工作的决策部署，出台《规定》，明确要求外卖平台企业将落实食品安全主体责任摆在经营管理的核心位置，将食品安全责任嵌入日常运营的每一个环节、每一处流程和每一次决策中，保证餐饮食品安全，让消费者放心消费、安全饮食。 会议要求，外卖平台企业必须严格执行法律法规，逐条对标对表《规定》，从落实资质审查责任、管理保障责任、社会公开责任、应急管理责任和协同监管责任五个方面，全面落实平台食品安全主体责任。会议强调，外卖平台企业应以《规定》正式实施的 6 月 1 日为时间节点，倒排工期，对照《规定》各项要求，全面梳理现有制度、流程、人员配备、技术保障等环节，尽快开展自查整改；严把审查关、管理关、配送关，强化技术赋能管理，主动融入政府监管体系，变被动应付为主动对接，通过推动“互联网 + 明厨亮灶”、鼓励外卖骑手参与食品安全监督等方式，共建食品安全社会共治新格局。 相关阅读： 《 市场监管总局公布外卖平台市场竞争状况调查进展：已开展现场调查 》 《 强化网络餐饮食品安全，2025 年 15.84 万家外卖商户被下线 》 《 美团回应“外卖增设‘无堂食’专项标识”新规：将让更透明的放心商家被更多消费者看见 》 《 京东外卖回应“外卖增设‘无堂食’专项标识”新规：将始终坚持“品质外卖”定位 》 《 淘宝闪购回应“外卖增设‘无堂食’专项标识”新规：第一时间响应，积极执行该规定 》 《 市场监管总局重磅新规：外卖商家须增设显著“无堂食”专项标识，6 月实施 》
+- source: 新华社新闻_新华网
+  role: official
+  published_at: 2026-04-03T21:40:09+08:00
+  title: 世界新能源汽车大会（泰国专场）聚焦国际合作与人才培养
+  link: http://www.news.cn/20260403/9646ef005a6a4958aabb99119d6f3c2c/c.html
+  summary: 新华社曼谷4月3日电（记者夏康静 常天童）2026世界新能源汽车大会（泰国专场）2日至3日在泰国首都曼谷举行，来自东南亚多国的300余名汽车产业和教育界相关人士参会，共同讨论区域新能源汽车产业协同发展，推动高技能人才培养合作。 中国科学技术协会主席、世界新能源汽车大会主席万钢在致辞中表示，新能源汽车产业发展离不开高技能人才支撑。中泰正依托良好的教育合作基础，持续深化新能源汽车人才培养合作，推动人才培养与产业协同发展。 中国驻泰国大使张建卫表示，中泰在新能源汽车领域的合作不断取得积极进展。双方将进一步深化政策沟通、技术交流和产业协作，推动区域新能源汽车产业向更加稳定、更具韧性、更可持续的方向发展。 泰国教育部职业教育委员会秘书长裕沙蓬·韦努戈社表示，中国在新能源等技术领域的发展处于全球领先地位，为泰国提供了重要技术支持与经验借鉴。泰方将进一步加强与中方在人才培养方面的合作，促进产教协同发展，推动区域人才培养和国际教育合作。 本次大会由世界新能源汽车发展组织、中国汽车工程学会和中国全国汽车职业教育教学指导委员会联合主办，围绕交通转型与可持续发展、国际合作与技能全球化设置专题论坛。大会期间，新能源汽车高技能人才共育联合体成立，“Chinauto”项目启动，相关组织和项目旨在搭建新能源汽车产业技术交流与产教合作平台，推动技术共享与跨境协作。 近年来，中国企业积极参与泰国新能源汽车产业发展，在整车制造、产业生态和人才培育等领域持续加大投入。目前，在泰投资建厂的中国车企已达7家，累计投资超过30亿美元，带动本地就业上万人。
+- source: 新华社新闻_新华网
+  role: official
+  published_at: 2026-04-03T20:02:19+08:00
+  title: 我国成立太空算力产业协同平台
+  link: http://www.news.cn/20260403/87d53c7aa6aa41c19ac9b646be1e03e2/c.html
+  summary: 新华社北京4月3日电（记者周圆）4月3日，在北京经济技术开发区举办的2026太空算力产业大会上，我国业界首个太空算力产业协同平台“太空算力专业委员会”正式成立，标志着我国太空算力产业迈入协同化发展新阶段。 “太空算力是地面产业在太空的延伸和集成，是构建全球泛在算力网络的前沿布局，将有力支撑人工智能等应用高质量发展。”中国信息通信研究院云计算与大数据研究所副所长李洁介绍，专委会的成立将提升算力与航天产业链协同程度，打造全要素融合的产业生态圈。 专委会致力于系统构建太空算力技术体系与产业生态，将聚焦星载AI芯片、星间激光通信、高效热控与太空光伏等环节，系统开展前瞻性技术联合攻关研究；加快标准体系预研与构建；面向卫星智能体、灾害应急响应、低轨卫星互联网、深空探测等应用场景，开展创新方案征集与试点验证等。 下一步，专委会将充分发挥平台枢纽作用，整合产学研用金资源，通过搭建交流机制、组织技术攻关、推动场景创新，推动太空算力产业从技术验证迈向规模化、商业化新阶段，打造全要素融合的太空算力产业生态圈。 此外，本次大会还发布了“太空算力关键共性技术攻关榜单”。该项目由北京经开区管委会主导，聚焦可回收火箭、太空光伏、激光通信、抗辐照芯片等太空算力产业链核心环节。
+- source: 新华社新闻_新华网
+  role: official
+  published_at: 2026-04-03T18:22:55+08:00
+  title: 伊朗导弹击中以色列一无人机工厂
+  link: http://www.news.cn/20260403/0a68a937987c42818742ecf0250c318c/c.html
+  summary: 新华社德黑兰4月3日电 据伊朗媒体3日报道，在伊朗对以色列发动的一轮导弹袭击中，以中部城市佩塔提克瓦一家无人机工厂被导弹击中。 伊朗法尔斯通讯社3日援引消息人士的话说，被伊朗导弹击中的目标为一家主要从事各类无人机研发和制造的工厂。 以色列方面尚未就此事作出回应。
+- source: 新华社新闻_新华网
+  role: official
+  published_at: 2026-04-03T20:20:24+08:00
+  title: 东北“大国重器”企业跑出产业振兴“加速度”
+  link: http://www.news.cn/20260403/f7ca690c63624a818070677eb5e86c43/c.html
+  summary: 新华社哈尔滨4月3日电（记者朱悦、姚湜、邹明仲）在吉林省长春市的新民大街上，一辆复古文旅列车吸引着往来市民的目光。深绿色的车身上，醒目的“H₂”标志着它的“身份”——这是一辆氢能列车。 这辆名为“氢春号”的文旅列车，由中车长春轨道客车股份有限公司团队研发，彻底摆脱传统有轨电车对接触网和变电所的依赖，内置氢能动力系统，运行时唯一产物是水，实现零碳排放，每公里平均能耗仅1.5千瓦时。 氢能文旅列车“氢春号”。新华社记者 唐铭泽 摄 “与传统内燃动力市域车辆相比，氢能源市域列车每列车全寿命周期可实现5万吨二氧化碳减排，相当于5万辆汽车各开5000公里所造成的排放量，平均每公里只消耗5度电。”中车长客国家轨道客车工程研究中心未来技术研究部新型能源设计师石磊说。 在位于黑龙江省的哈尔滨电气集团佳木斯电机股份有限公司，全国劳动模范关涛正在固定主氦风机电磁轴承转速传感器信号线。新华社记者 朱悦 摄 东北三省一批关系国民经济命脉的“大国重器”企业正以绿色转型、技术创新、数智赋能为方向，在服务国家战略中锻造新优势，勾勒出以新质生产力驱动东北全面振兴的新图景。 绿色转型不仅在交通领域加速推进，在传统制造工厂同样如火如荼。2024年获评“国家级绿色工厂”的通用技术沈阳机床股份有限公司引入绿色设计理念，建立健全绿色制造管理体系，从厂房集约化、原料无害化、生产洁净化、废物资源化、能源低碳化等方面着手，全面提升绿色制造水平，企业万元产值综合能耗持续下降。 位于黑龙江省的中铝集团东北轻合金有限责任公司（简称“东轻”）坚持把绿色低碳贯穿生产经营全流程，构建高效、清洁、循环的绿色制造体系，大力推进光伏电站、余热回收、工艺节能等项目，通过固溶工艺优化等技术改造，年节约电能超240万千瓦时。 如果说绿色转型是东北“大国重器”的底色，那么核心技术创新则是它们的看家本领。运行时速400公里、试验时速大于450公里的CR450BF动车组样车在中车长春轨道客车股份有限公司下线后，马不停蹄进行正线试验。“在研制过程中没有可以借鉴的成熟经验，完全凭借自主创新在‘无人区’探索。”中车长客副总工程师朱彦说。 在国铁集团主导下，中车长客等多家参研单位突破了减阻降耗、减振降噪、全要素轻量化系统集成等难题，在全球范围内首次创建时速400公里动车组技术体系，实现了理论、技术、装备、标准、管理模式的全面创新。 东轻同样以创新破局。聚焦国家战略急需，公司把科技创新摆在核心位置，组建劳模创新工作室、技能大师工作室，集中力量攻克关键材料技术瓶颈。贾春成团队历经多轮试验，成功突破超大规格7系铝合金铸锭技术，打破国外垄断；技术骨干深耕航空航天材料研发，为重点型号装备提供关键承力铝材，多项产品获评制造业单项冠军。企业持续突破高端合金成分精确控制、表面质量管控等核心技术，航空航天预拉伸板市场占有率稳居行业首位。 在中铝集团东北轻合金有限责任公司“数智化圆锭加工园区”，机械臂正在作业。新华社记者 朱悦 摄 生产方式的数智变革，正在工厂深处悄然发生。走进位于辽宁省的鞍钢集团本钢板材冷轧总厂第三冷轧厂，主控室巨幅显示屏映入眼帘，从原料供给到成品产出的全流程状态清晰可见。“以前得跑遍车间摸情况，现在坐在主控室，每一个钢卷的情况都能实时掌握。”第三冷轧厂区域长顾忠帅说。 集控中心作为生产线的“智慧大脑”，整合全流程生产数据，让每一卷钢材都拥有专属“数字身份证”。智能系统通过分析海量数据，精准优化加热温度、轧制速度等关键工艺参数。“数据说话，精准调控，这是‘智改数转’的核心逻辑。”第三冷轧厂厂长张松岩介绍，智能系统投用以来，该厂劳动生产率提高65%，智慧指数达85%。
+- source: 人民日报
+  role: official
+  published_at: 2026-04-03T08:26:06+08:00
+  title: 近8200家平台企业报送涉税信息
+  link: http://paper.people.com.cn/rmrb/pc/content/202604/03/content_30148986.html
+  summary: 2026年04月03日 本报北京4月2日电 （记者王观）记者4月1日从国家税务总局获悉：已有近8200家境内外互联网平台企业向税务机关报送了涉税信息。 按照《互联网平台企业涉税信息报送规定》要求，平台企业自2025年10月起按季向税务机关报送平台内经营者和从业人员的身份信息及上季度收入信息。4月1日，一季度平台企业涉税信息报送工作开始。 规定实施带来积极效应。从2025年第四季度涉税信息报送情况看，多数平台较首次报送（2025年第三季度）时间大幅提前；各平台报送的平台内经营者和从业人员数量、营收规模环比增长均超过10%，报送信息质量进一步提升。平台内商户纳税明显规范。规定实施后，大多数平台内商户依法如实进行纳税申报，一些商户出于合规经营需要开始要求其供应商开具发票。2025年第四季度，平台内小规模纳税人取得发票金额同比增长28%，涉税信息报送推动产业链上下游联动合规的作用持续显现；缴税的平台内商户数比规定实施前增加32%，线上商户与线下商户平均税负的差异明显缩小。 “涉税信息报送使得平台经营数据显性化，平台内商户应登记未登记以及隐匿收入、拆分收入、转换收入性质等违法操作空间大幅压缩，平台内虚假营销、恶意刷单、低价倾销等违规经营行为开始减少，涉税信息报送撬动平台经济‘反内卷’作用持续显现。”国家税务总局征管和科技发展司司长练奇峰表示，税务部门将持续做好咨询辅导和技术保障，严格核验平台报送数据质量，进一步深化涉税信息分析应用，识别平台内商户税收风险并开展合规申报提醒。
+- source: IT之家
+  role: tech
+  published_at: 2026-04-03T22:12:46+08:00
+  title: 意大利法院裁定 Netflix 平台涨价违法，消费者最高可获 500 欧元赔偿
+  link: https://www.ithome.com/0/935/898.htm
+  summary: IT之家 4 月 3 日消息，据科技媒体 Android Headlines 今天报道，意大利罗马法院裁定，Netflix 于 2017 年-2024 年期间的涨价行为违法，相关用户有权获得最高 500 欧元（IT之家注：现汇率约合 3980 元人民币）赔偿。 据报道，本次诉讼由意大利消费者权益组织 Movimento Consumatori 提起，Netflix 最终败诉， 标准订阅套餐用户最高可获得 250 欧元（现汇率约合 1990 元人民币）退款 ， 其他用户则最高可获 500 欧元（现汇率约合 3980 元人民币） 。 本案的核心争议在于，Netflix 虽然会提前 30 天向用户说明涨价，并允许取消订阅。但法院认为，平台方应在条款中明确写出未来可能涨价的具体理由，而 Netflix 当时却并没有这么做。 不过 Netflix 已经在 2025 年 4 月修订了服务条款，将涨价与服务变更、监管要求或技术升级挂钩，符合意大利《消费者法》要求。 同时，本次裁决对流媒体行业意义重大。首先，Disney+、Hulu、Peacock 等业界巨头几乎就是店大欺客，他们可以随时通过公告或邮件通知涨价。 不过这次判决可能在欧洲范围内产生示范效应。欧盟在消费者权益保护方面一向强硬， 如果类似规则推广至整个欧盟 ， 整个流媒体行业的定价规则可能被重塑 。 最后，Netflix 这边的罚款压力也不小。仅在意大利，Netflix 就拥有约 540 万名订阅用户。简单估算下，如果有 300 万用户获得较低档的 250 欧元（现汇率约合 1990 元人民币）退款，总额也将达到约 7.5 亿欧元（现汇率约合 59.7 亿元人民币）。
+- source: 新华社新闻_新华网
+  role: official
+  published_at: 2026-04-03T22:31:57+08:00
+  title: 伊朗总统回应特朗普：“炸回石器时代”言论意味着大规模战争罪
+  link: http://www.news.cn/20260403/9165319d96ed44f2b2f19cbf78bf1586/c.html
+  summary: 新华社德黑兰4月3日电 伊朗总统佩泽希齐扬3日回应美国总统特朗普对伊朗发出的威胁时说，威胁将整个国家“炸回石器时代”意味着“大规模战争罪”。 佩泽希齐扬在社交媒体上写道：“威胁将整个国家炸回石器时代，除了意味着大规模战争罪之外，还能意味着什么？……历史上有太多人，因为在罪犯面前保持沉默而付出了沉重的代价。” 特朗普4月1日在社交媒体发帖称：“伊朗总统……刚刚向美国请求停火。在霍尔木兹海峡恢复开放、自由、畅通之前，我们不予考虑。在海峡开放前，我们会把伊朗炸到灰飞烟灭，或者如他们所说——炸回石器时代！！！”
+- source: 新华社新闻_新华网
+  role: official
+  published_at: 2026-04-03T23:01:00+08:00
+  title: 美以对伊朗军事打击战事速览（3日）
+  link: http://www.news.cn/20260403/84bdff9e99ba4449bfe313b0371a1e9d/c.html
+  summary: 美国和以色列对伊朗发动的军事打击3日进入第35天。 新华社北京4月3日电 美国和以色列对伊朗发动的军事打击3日进入第35天。以下是最新战事速览： ——伊朗 伊朗伊斯兰革命卫队公共关系部门发表声明说，防空系统在伊朗中部领空击落一架美国F－35战斗机。声明说，这是伊斯兰革命卫队防空系统过去12小时内击落的第二架美国战机。 据伊朗伊斯兰共和国广播电视台报道，伊朗伊斯兰革命卫队公共关系部门说，其海军和空天部队展开“真实承诺-4”行动第92波攻势，使用导弹袭击了美军位于科威特的一处两栖舰艇集结点，以及美军位于以色列海法的一处驻有F-16战斗机编队的空军基地，并对以色列特拉维夫等地超过50个目标实施了打击。伊朗还使用无人机摧毁了部署在巴林的一套预警雷达系统。 据伊朗媒体报道，伊朗伊斯兰革命卫队宣布，革命卫队新型先进防御系统在赞詹省上空摧毁了以色列一枚先进隐形远程巡航导弹，该导弹携带重量为1000磅（约合454公斤）的弹头。此外，在伊朗对以色列发动的一轮导弹袭击中，以中部城市佩塔提克瓦一家无人机工厂被导弹击中。 据多家伊朗媒体报道，伊朗伊斯兰革命卫队证实其海军情报部门副指挥官贝赫纳姆·雷扎伊遇难。 据今日俄罗斯通讯社报道，伊朗驻埃及开罗利益代表处负责人穆杰塔巴·菲尔多西普尔在埃及首都开罗对俄罗斯媒体表示，伊朗想要的是彻底结束战争，而非仅仅停火。“我们希望敌人不要再对伊朗犯下战略错误”，如果他们想登上或占领伊朗的某些岛屿，胡塞武装可能会封锁（连接红海和亚丁湾的）曼德海峡。 据伊朗学生通讯社报道，一名伊朗红新月会发言人说，伊朗境内18所主要大学遭袭。战事开始后，已有超过11.8万处非军事单位被打击。 ——美国 美军中央司令部发表声明，否认美方战斗机被伊朗伊斯兰革命卫队击落，称所有美军战斗机均处于“可查状态”。 美国有线电视新闻网报道，美国情报机构的评估显示，尽管美国和以色列对伊朗的军事行动已进行5周，但伊朗仍有约一半的导弹发射装置完好无损，并保存了数千架自杀式攻击无人机。 美国总统特朗普在社交媒体上发文称：“再多给一点时间，我们就能轻松打开霍尔木兹海峡，夺取石油，大赚一笔。” 美国有线电视新闻网报道，最新公布的卫星图像显示，位于沙特阿拉伯苏丹王子空军基地的一部美军关键雷达在3月1日伊朗对其袭击中受损。报道说，该雷达型号为AN/TPY－2，是美国“萨德”反导系统的核心设备。 ——科威特 据科威特通讯社报道，科威特电力、水利和可再生能源部发言人法蒂玛·哈亚特说，伊朗发动的袭击导致科威特一座电力和海水淡化厂受损。科威特石油公司说该国艾哈迈迪港炼油厂遭无人机袭击，导致部分设施起火，暂无人员伤亡报告。 ——阿联酋 阿联酋阿布扎比媒体办公室发布声明说，阿布扎比酋长国防空系统成功拦截目标后产生的碎片坠落，造成12人受伤。伤者包括7名尼泊尔籍人员和5名印度籍人员。 ——也门 也门胡塞武装宣布，与伊朗、黎巴嫩真主党联合行动，对以色列发动第四轮协同打击，用弹道导弹攻击以色列特拉维夫市雅法地区“重要目标”。 ——韩国 韩国总统李在明与到访的法国总统马克龙在青瓦台会晤后表示，双方将就霍尔木兹海峡航运安全加强合作。
+- source: 纽约时报中文网 国际纵览
+  role: bridge
+  published_at: 2026-04-03T10:10:27+08:00
+  title: 中国和伊朗找到反击特朗普的有效方式
+  link: https://cn.nytimes.com/business/20260403/trump-iran-china-choke-points/?utm_source=RSS
+  summary: 从关税到对伊开战，特朗普在全球舞台上咄咄逼人，但一些国家已经开始利用对战略要害环节的控制权反击。中国限制稀土出口、伊朗封锁霍尔木兹海峡都有效威胁了美国经济。 Tierney L. Cross/The New York Times 特朗普总统声称，他的强硬国际政策只有好处，没有坏处。
+- source: BBC Chinese
+  role: bridge
+  published_at: 2026-04-03T11:59:04+08:00
+  title: 「要嚴肅一些……不要每天出來講話」：馬克龍批評特朗普對伊朗戰爭的處理方式
+  link: https://www.bbc.com/zhongwen/articles/c4gd8lxlg5vo/trad?at_medium=RSS&at_campaign=rss
+  summary: 法國總統馬克龍（馬克宏）批評特朗普（川普）處理與伊朗戰爭的方式，強調這類衝突需要「認真」對待，不能每天只是開口就自相矛盾。
+- source: 纽约时报中文网 国际纵览
+  role: bridge
+  published_at: 2026-04-03T10:21:14+08:00
+  title: 特朗普是如何将自己置于伊朗困局无法脱身的
+  link: https://cn.nytimes.com/usa/20260403/trump-speech-iran-war-whats-next/?utm_source=RSS
+  summary: 就结束冲突而进行的谈判基本未获进展，特朗普拟定的战争目标似乎难以实现。他试图安抚民众，让人们相信战争代价只是暂时的，但市场的反应是深深的怀疑。 Doug Mills/The New York Times
+
+Discovery-only agenda hints:
+- These hints are for agenda sensing only.
+- Do not cite, quote, or attribute them directly in the article.
+- Use a discovery hint only when the same story is already supported by the citable feed items above.
+
+- source: Google News: Reuters Search
+  publisher_hint: Reuters
+  role: discovery
+  published_at: 2026-04-04T01:09:00+08:00
+  title: US fighter jet shot down over Iran, search underway for crew, US officials say
+  link: https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGlIcmp6ajhocl9IYVNsSVE1TmFlaUUwSFJ5RkREMWhhNlhfN3NqeTgxa2lJZ1pjenY0blE2ZU1kV25USHd6VUY4UGJ0ekRZVUltU1k5NzUtSm5iVUU3cVk0Mmt1Z25XeE1LSHdKRlhHYXhUdm5jemVGTDZVQ1pVeEIxbWhYRGdfMTI5c1dfMXF1bkp3NkZYWmhMLUJuTF9udTFsUHNXd1Z0OEpNQVVGc3ZaR0FCbGtwU2FrNmMtRG5OTDVI?oc=5
+  summary: US fighter jet shot down over Iran, search underway for crew, US officials say Reuters
+- source: Google News: Reuters Search
+  publisher_hint: Reuters
+  role: discovery
+  published_at: 2026-04-04T01:08:01+08:00
+  title: Trump's anger over Iran thrusts NATO into fresh crisis
+  link: https://news.google.com/rss/articles/CBMitwFBVV95cUxNS2liSDZHMVVtSHozdTMyejFlbDNQMVBSVU5JR09Vb3FxUV9QVDRaUDdxdGxhcGxPaEU4WE0tN2l2XzZILXVSck9lcF9UTDFWMGstcXhidklfOC04bUVCM1dtUDhKQjlfMnNtcFNRYjFVek9ONHhfOERBa0JyZnpsWFd3REtWSGxnYTcwdnhRbFFmTHNGSHRqZkZERU84S2tSTThDUG9tUHdiQ3pZb0lUVV9EY3BETU0?oc=5
+  summary: Trump's anger over Iran thrusts NATO into fresh crisis Reuters
+- source: Google News: Reuters Search
+  publisher_hint: Reuters
+  role: discovery
+  published_at: 2026-04-04T01:03:00+08:00
+  title: Italy's Meloni visits Saudi Arabia, Qatar and UAE amid Gulf tensions, energy worries
+  link: https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjB6QlpZb3NTU3otMXBTWm43amtROXo0MHdINXJEaFFJc0hGU0dLbGZpM3NPSUJVTmJkbE1SeGV2TFpoZGZVVE5maTRWWFl3ZU9xTnl4QXlOeUVxVGhmNlhMQVNheWt1QXNBQVpXTGMtLTFhLV8wTVMybFdRVER6SF9zTjdwbjZkdkZyQzV4MFV1TUhxMnlJaFJaSVZNOWowcmxZ?oc=5
+  summary: Italy's Meloni visits Saudi Arabia, Qatar and UAE amid Gulf tensions, energy worries Reuters
+- source: Google News: Reuters Search
+  publisher_hint: Reuters
+  role: discovery
+  published_at: 2026-04-04T00:45:30+08:00
+  title: Japanese, French and Omani vessels cross the Strait of Hormuz
+  link: https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDZlUENrREdFa2cxVWpLTE44Q1FGVjU1SXFiS2RVWUUzeVJWNDdDMXNzSlA1X1ZTUlJ0YnNjb0FFQ0RMRnhLaDg4cUV5T1pMX2xOQU5tSmpfQ0x3MjhQQ3lCREJ4ZXI1REVDVGJGZE5oaFRXVzN1TjR3WWRYWksxamRRcWo0aXJHWlljdHdrZ2tPcjJNbTNKZlhveXlvN3dp?oc=5
+  summary: Japanese, French and Omani vessels cross the Strait of Hormuz Reuters
+
